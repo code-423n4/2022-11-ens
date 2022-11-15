@@ -60,7 +60,7 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ---
 
-# Sponsorname contest details
+# ENS Versus contest details
 - Total Prize Pool: Sum of below awards
   - HM awards: XXX XXX (Notion Field: Main Pool)
   - QA report awards: XXX XXX (Notion Field: QA Pool, usually 10% of total award pool)
@@ -69,10 +69,10 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
   - Scout awards: $500 USDC (this field doesn't exist in Notion yet, usually $500 USDC)
   - (this line can be removed if there is no mitigation) Mitigation review contest: XXX XXX (*Opportunity goes to top X certified wardens based on placement in this contest.*)
 - Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/YYYY-MM-sponsorName-contest/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2022-11-ens-versus-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
-- Starts TBD XXX XXX XX 20:00 UTC
-- Ends TBD XXX XXX XX 20:00 UTC
+- Starts November 22, 2022 20:00 UTC
+- Ends November 28, 2022 20:00 UTC
 
 ## C4udit / Publicly Known Issues
 
