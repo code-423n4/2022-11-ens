@@ -49,9 +49,9 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 # ENS Versus contest details
 - Total Prize Pool: $36,500 USDC
-  - HM awards: $18,000 USDC
-  - QA report awards: $1,000 USDC
-  - Gas report awards: $2,000 USDC
+  - HM awards: $21,000 USDC
+  - QA report awards: $0 USDC
+  - Gas report awards: $0 USDC
   - Judge + presort awards: $6,000 USDC
   - Scout awards: $500 USDC 
   - Mitigation review contest: $9,000 USDC
