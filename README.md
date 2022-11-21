@@ -48,7 +48,7 @@ yarn test
 This audit is a second audit intended to cover changes made to the Name Wrapper contracts subsequent to the July C4 public audit.
 
 ## contracts/wrapper
-### [BytesUtil.sol](https://github.com/code-423n4/2022-11-ens/tree/main/contracts/wrapper/BytesUtils.sol)
+### [BytesUtils.sol](https://github.com/code-423n4/2022-11-ens/tree/main/contracts/wrapper/BytesUtils.sol)
 **SLOC**: 40
 
 Contains assorted utility functions for manipulating byte strings.
