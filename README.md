@@ -103,7 +103,7 @@ Mixin for a contract that can have controllers - other accounts that have access
 
 Interface for a metadata service - a contract that returns token metadata for a wrapped token.
 
-*** [INameWrapperUpgrade.sol](https://github.com/code-423n4/2022-11-ens/tree/main/contracts/wrapper/INameWrapperUpgrade.sol)
+### [INameWrapperUpgrade.sol](https://github.com/code-423n4/2022-11-ens/tree/main/contracts/wrapper/INameWrapperUpgrade.sol)
 **SLOC**: 19
 
 Interface for an upgrade target for the name wrapper - a new version of the wrapper.
