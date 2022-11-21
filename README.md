@@ -31,8 +31,8 @@ Information on existing ENS deployments can be found [here](https://docs.ens.dom
 ## Setup
 
 ```
-git clone https://github.com/code-423n4/2022-07-ens
-cd 2022-07-ens
+git clone https://github.com/code-423n4/2022-11-ens
+cd 2022-11-ens
 yarn
 ```
 
@@ -42,18 +42,18 @@ yarn
 yarn test
 ```
 
-# Contracts
+# Contracts in scope
 **Note: Not all contracts in this repository are in-scope for this audit! We have included contracts from the original ens-contracts repo that are dependencies of in-scope contracts here for the convenience of auditors. Only the contracts listed below are in-scope.**
 
 This audit is a second audit intended to cover changes made to the Name Wrapper contracts subsequent to the July C4 public audit.
 
 ## contracts/wrapper
-### [BytesUtil.sol](https://github.com/code-423n4/2022-07-ens/tree/main/contracts/wrapper/BytesUtil.sol)
+### [BytesUtil.sol](https://github.com/code-423n4/2022-11-ens/tree/main/contracts/wrapper/BytesUtil.sol)
 **SLOC**: 40
 
 Contains assorted utility functions for manipulating byte strings.
 
-### [ERC1155Fuse.sol](https://github.com/code-423n4/2022-07-ens/tree/main/contracts/wrapper/ERC1155Fuse.sol)
+### [ERC1155Fuse.sol](https://github.com/code-423n4/2022-11-ens/tree/main/contracts/wrapper/ERC1155Fuse.sol)
 **SLOC**: 285
 
 An implementation of ERC1155 that only supports 1 token per token type, with the owner, fuse/flag information, and an expiration time all packed into a single storage slot for gas-efficiency. Should conform to ERC1155, with the addition of `ownerOf`.
@@ -65,7 +65,7 @@ Dependencies:
  - @openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol
  - @openzeppelin/contracts/utils/Address.sol
 
-### [NameWrapper.sol](https://github.com/code-423n4/2022-07-ens/tree/main/contracts/wrapper/NameWrapper.sol)
+### [NameWrapper.sol](https://github.com/code-423n4/2022-11-ens/tree/main/contracts/wrapper/NameWrapper.sol)
 **SLOC**: 701
 
 A contract that wraps ENS names, providing additional functionality:
@@ -77,7 +77,7 @@ A contract that wraps ENS names, providing additional functionality:
 
 The primary reason for this wrapper is the 'fuse' functionality for revoking permissions over names; this is intended to support applications such as trustless subdomain issuance, and trustless name resolution.
 
-For detailed documentation of the wrapper and its expected behaviour, see [its dedicated README](contracts/wrapper/README.md).
+For detailed documentation of the wrapper and its expected behaviour, see [its dedicated README](https://github.com/code-423n4/2022-11-ens/blob/main/contracts/wrapper/README.md).
 
  Dependencies:
  - ERC1155Fuse.sol
@@ -88,22 +88,22 @@ For detailed documentation of the wrapper and its expected behaviour, see [its d
  - @openzeppelin/contracts/token/ERC721/IERC721Receiver.sol
  - @openzeppelin/contracts/access/Ownable.sol
 
-### [INameWrapper.sol](https://github.com/code-423n4/2022-07-ens/tree/main/contracts/wrapper/INameWrapper.sol)
+### [INameWrapper.sol](https://github.com/code-423n4/2022-11-ens/tree/main/contracts/wrapper/INameWrapper.sol)
 **SLOC**: 113
 
 Public interface for `NameWrapper.sol`.
 
-### [Controllable.sol](https://github.com/code-423n4/2022-07-ens/tree/main/contracts/wrapper/Controllable.sol)
+### [Controllable.sol](https://github.com/code-423n4/2022-11-ens/tree/main/contracts/wrapper/Controllable.sol)
 **SLOC**: 17
 
 Mixin for a contract that can have controllers - other accounts that have access to privileged functions.
 
-### [IMetadataService.sol](https://github.com/code-423n4/2022-07-ens/tree/main/contracts/wrapper/IMetadataService.sol)
+### [IMetadataService.sol](https://github.com/code-423n4/2022-11-ens/tree/main/contracts/wrapper/IMetadataService.sol)
 **SLOC**: 4
 
 Interface for a metadata service - a contract that returns token metadata for a wrapped token.
 
-*** [INameWrapperUpgrade.sol](https://github.com/code-423n4/2022-07-ens/tree/main/contracts/wrapper/INameWrapperUpgrade.sol)
+*** [INameWrapperUpgrade.sol](https://github.com/code-423n4/2022-11-ens/tree/main/contracts/wrapper/INameWrapperUpgrade.sol)
 **SLOC**: 19
 
 Interface for an upgrade target for the name wrapper - a new version of the wrapper.
